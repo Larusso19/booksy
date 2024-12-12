@@ -7,13 +7,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  var widgetsFlutterBinding;
+  widgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const BooksyApp());
 }
 
 class BooksyApp extends StatelessWidget {
-  const BooksyApp({Key? key}) : super(key: key);
+  const BooksyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +31,7 @@ class BooksyApp extends StatelessWidget {
 }
 
 class BottomNavigationWidget extends StatefulWidget {
-  const BottomNavigationWidget({Key? key}) : super(key: key);
+  const BottomNavigationWidget({super.key});
 
   @override
   State<BottomNavigationWidget> createState() => _BottomNavigationWidgetState();

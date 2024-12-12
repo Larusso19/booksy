@@ -20,7 +20,7 @@ class RemoveBookFromBookshelf extends BookshelfEvent {
 }
 
 class BookshelfBloc extends Bloc<BookshelfEvent, BookshelfState> {
-  BookshelfBloc(BookshelfState initialState) : super(initialState) {
+  BookshelfBloc(super.initialState) {
     on<AddBookToBookshelf>((event, emit) {
       state.bookIds.add(event.bookId);
       emit(BookshelfState(state.bookIds));
