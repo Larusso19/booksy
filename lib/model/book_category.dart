@@ -3,5 +3,5 @@ class BookCategory {
   final String name;
   final String colorBg;
 
-  BookCategory(this.id, this.name, this.colorBg);
+  const BookCategory(this.id, this.name, this.colorBg);
 }
