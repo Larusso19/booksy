@@ -7,12 +7,12 @@ class CategoriesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const BookCategoriesGrid();
+    return BookCategoriesGrid();
   }
 }
 
 class BookCategoriesGrid extends StatelessWidget {
-  const BookCategoriesGrid({Key? key}) : super(key: key);
+  BookCategoriesGrid({Key? key}) : super(key: key);
 
   final List<BookCategory> _categories = const [
     BookCategory(1, "Ciencia Ficción", "#A9CCE3"),
